@@ -12,7 +12,7 @@ randomUrl = "http://www.setgetgo.com/randomword/get.php"
 # search_terms = ['a', 'b', 'c', 'd']
 def bot():
     browser.get('https://www.bing.com')
-    for _ in range(30):
+    for _ in range(34):      #Added 4 because everyday there is an additional 12 points edge bonus.
         browser.set_page_load_timeout(5000)
         assert 'Bing' in browser.title
         # random_term = search_terms[randint(0, len(search_terms)-1)];
